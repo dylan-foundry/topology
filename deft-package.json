@@ -1,0 +1,11 @@
+{
+  "name": "geometry",
+  "description": "",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "default-target": "geometry",
+  "tests": [
+    "geometry-test-suite-app"
+  ]
+}
