@@ -6,6 +6,10 @@ Copyright: See LICENSE file in this distribution.
 define abstract class <geometry> (<object>)
 end class <geometry>;
 
+define generic geometry-coordinates
+    (g :: <geometry>)
+ => (coordinates :: <coordinate-sequence>);
+
 define generic geometry-dimension
     (g :: <geometry>)
  => (geometry-dimension :: <integer>);

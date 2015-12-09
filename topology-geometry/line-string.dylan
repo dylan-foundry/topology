@@ -8,6 +8,12 @@ define class <line-string> (<geometry>)
     required-init-keyword: coordinates:;
 end class <line-string>;
 
+define inline method geometry-coordinates
+    (g :: <line-string>)
+ => (coordinates :: <coordinate-sequence>)
+  g.line-string-coordinates
+end method geometry-coordinates;
+
 define inline method empty?
     (g :: <line-string>)
  => (empty? :: <boolean>)

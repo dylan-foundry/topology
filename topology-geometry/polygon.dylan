@@ -9,3 +9,11 @@ define class <polygon> (<surface>)
   constant slot polygon-holes :: <linear-ring-vector>,
     required-init-keyword: holes:;
 end class <polygon>;
+
+define inline method geometry-coordinates
+    (p :: <polygon>)
+ => (coordinates :: <coordinate-sequence>)
+  apply(concatenate-coordinates,
+        geometry-coordinates(p.polygon-shell),
+        map(geometry-coordinates, p.polygon-holes))
+end method geometry-coordinates;
