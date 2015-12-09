@@ -1,11 +1,11 @@
 {
-  "name": "geometry",
+  "name": "topology",
   "description": "",
   "keywords": [
   ],
   "license": "MIT",
-  "default-target": "geometry",
+  "default-target": "topology-geometry",
   "tests": [
-    "geometry-test-suite-app"
+    "topology-test-suite-app"
   ]
 }
