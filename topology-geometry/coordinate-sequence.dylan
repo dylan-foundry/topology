@@ -9,42 +9,42 @@ define class <coordinate-sequence> (<sequence>)
     size-getter: size,
     size-init-keyword: size:,
     size-init-value: 0;
-end;
+end class <coordinate-sequence>;
 
 define inline method xy-coordinates
-     (cs :: <coordinate-sequence>, idx :: <integer>)
+    (cs :: <coordinate-sequence>, idx :: <integer>)
  => (x :: <double-float>, y :: <double-float>)
   let idx = idx * 3;
   values(coordinate-data(cs, idx),
          coordinate-data(cs, idx + 1))
-end;
+end method xy-coordinates;
 
 define inline method xyz-coordinates
-     (cs :: <coordinate-sequence>, idx :: <integer>)
+    (cs :: <coordinate-sequence>, idx :: <integer>)
  => (x :: <double-float>, y :: <double-float>, z :: <double-float>)
   let idx = idx * 3;
   values(coordinate-data(cs, idx),
          coordinate-data(cs, idx + 1),
          coordinate-data(cs, idx + 2))
-end;
+end method xyz-coordinates;
 
 define inline method x-coordinate
-     (cs :: <coordinate-sequence>, idx :: <integer>)
+    (cs :: <coordinate-sequence>, idx :: <integer>)
  => (x :: <double-float>)
   let idx = idx * 3;
   coordinate-data(cs, idx)
-end;
+end method x-coordinate;
 
 define inline method y-coordinate
-     (cs :: <coordinate-sequence>, idx :: <integer>)
+    (cs :: <coordinate-sequence>, idx :: <integer>)
  => (y :: <double-float>)
   let idx = idx * 3;
   coordinate-data(cs, idx + 1)
-end;
+end method y-coordinate;
 
 define inline method z-coordinate
-     (cs :: <coordinate-sequence>, idx :: <integer>)
+    (cs :: <coordinate-sequence>, idx :: <integer>)
  => (z :: <double-float>)
   let idx = idx * 3;
   coordinate-data(cs, idx + 2)
-end;
+end method z-coordinate;
