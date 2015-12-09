@@ -9,12 +9,12 @@ end library topology-geometry;
 define module topology-geometry
   use common-dylan;
 
-  export <coordinate>,
-         coordinate-x,
-         coordinate-y,
-         coordinate-z;
-
-  export <coordinate-sequence>;
+  export <coordinate-sequence>,
+         xy-coordinates,
+         xyz-coordinates,
+         x-coordinate,
+         y-coordinate,
+         z-coordinate;
 
   export <envelope>,
          envelope-max,

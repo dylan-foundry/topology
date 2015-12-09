@@ -1,7 +1,7 @@
 Library: topology-geometry
 Target-Type: dll
 Files: library
-       coordinate
+       coordinate-sequence
        envelope
        geometry
        point
