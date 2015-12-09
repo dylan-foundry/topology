@@ -1,6 +1,6 @@
 Module: topology-geometry
-Synopsis: 
-Author: 
+Synopsis: Base, abstract geometry implementation.
+Author: Bruce Mitchener, Jr.
 Copyright: See LICENSE file in this distribution.
 
 define abstract class <geometry> (<object>)
@@ -55,4 +55,3 @@ define generic contains?
 define generic overlap?
     (g1 :: <geometry>, g2 :: <geometry>)
  => (overlap? :: <boolean>);
-
