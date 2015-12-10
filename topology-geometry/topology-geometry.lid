@@ -5,6 +5,7 @@ Files: library
        envelope
        geometry
        point
+       curve
        line-string
        linear-ring
        surface

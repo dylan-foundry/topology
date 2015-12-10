@@ -40,6 +40,8 @@ define module topology-geometry
 
   export <point>;
 
+  export <curve>;
+
   export <line-string>,
          line-string-coordinates,
          closed?;

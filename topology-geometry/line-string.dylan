@@ -3,7 +3,7 @@ Synopsis: Line-string geometry implementation.
 Author: Bruce Mitchener, Jr.
 Copyright: See LICENSE file in this distribution.
 
-define class <line-string> (<geometry>)
+define class <line-string> (<curve>)
   constant slot line-string-coordinates :: <coordinate-sequence>,
     required-init-keyword: coordinates:;
 end class <line-string>;
